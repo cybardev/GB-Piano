@@ -1,0 +1,104 @@
+{
+  "_resourceType": "actor",
+  "id": "dac390c9-a1df-4882-9a61-9cf89016b490",
+  "name": "F",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "daf95270-e30d-423b-9ee7-990ae29f57f6",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_6",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$",
+        "__collapse": true
+      },
+      "id": "9091b85a-97bd-4ca1-b5eb-f39e462ccf8f"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "variable",
+                "value": "0"
+              },
+              "__collapseElse": false,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "eef09b17-3d1a-4309-b021-b5c6df842ffb",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 12
+                  },
+                  "id": "67c5e1e0-0330-44fb-8ece-8eca82653190"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "eef09b17-3d1a-4309-b021-b5c6df842ffb",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 5
+                  },
+                  "id": "a7b9b9b0-9717-4982-a1c1-15d416101927"
+                }
+              ]
+            },
+            "id": "8f623b93-4f9a-4dc1-ac7a-a7cc300ed4fa"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "f1be2ac3-04ab-482a-8b83-99ffba1a89cd"
+            },
+            "id": "3d44f3a6-3ec8-445b-9026-6c102d3e9ae1"
+          }
+        ]
+      },
+      "id": "4dd30ae0-8781-40e7-af73-01002cbec54c"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 15,
+  "y": 17,
+  "_index": 5
+}

@@ -1,0 +1,11 @@
+{
+  "_resourceType": "tileset",
+  "id": "684355a3-58bb-41e6-a661-da4eacd79e29",
+  "name": "note-range",
+  "symbol": "tileset_note_range",
+  "width": 2,
+  "height": 1,
+  "imageWidth": 16,
+  "imageHeight": 8,
+  "filename": "note-range.png"
+}

@@ -1,0 +1,20 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "0",
+      "name": "octave-up",
+      "symbol": "var_octave_up_0"
+    },
+    {
+      "id": "1",
+      "name": "note-range",
+      "symbol": "var_note_range"
+    },
+    {
+      "id": "f2128911-cf57-4726-9205-6f7d6f236c76__L0",
+      "name": "Local 0",
+      "symbol": "var_local_0"
+    }
+  ]
+}
