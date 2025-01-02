@@ -17,12 +17,12 @@
   "y": 30,
   "script": [
     {
-      "command": "EVENT_ACTOR_HIDE",
+      "command": "EVENT_ACTOR_DEACTIVATE",
       "args": {
-        "actorId": "player",
+        "actorId": "$self$",
         "__collapse": true
       },
-      "id": "9d1e3c65-d5c2-4000-a108-88b86dd29af1"
+      "id": "f3e29aeb-8b63-4252-8150-28b4fe680891"
     },
     {
       "command": "EVENT_TEXT_DRAW",
@@ -36,17 +36,6 @@
       "id": "d79517be-858f-4e62-a1d3-c3d0a329a04b"
     },
     {
-      "command": "EVENT_SET_VALUE",
-      "args": {
-        "variable": "0",
-        "value": {
-          "type": "false"
-        },
-        "__collapse": true
-      },
-      "id": "e5f94a53-ab0f-412a-9192-ce1979d74717"
-    },
-    {
       "command": "EVENT_TEXT_DRAW",
       "args": {
         "text": "Notes:",
@@ -56,6 +45,17 @@
         "__collapse": false
       },
       "id": "28f880d6-c8a0-4c6a-bf66-48dd019dd002"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "0",
+        "value": {
+          "type": "false"
+        },
+        "__collapse": true
+      },
+      "id": "e5f94a53-ab0f-412a-9192-ce1979d74717"
     },
     {
       "command": "EVENT_SET_INPUT_SCRIPT",
