@@ -38,56 +38,68 @@
       "children": {
         "true": [
           {
-            "command": "EVENT_IF",
+            "command": "EVENT_THREAD_START",
             "args": {
-              "condition": {
-                "type": "variable",
-                "value": "0"
-              },
-              "__collapseElse": false,
-              "__collapse": false
+              "variable": "T0",
+              "__scriptTabs": "true"
             },
             "children": {
               "true": [
                 {
-                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "command": "EVENT_IF",
                   "args": {
-                    "type": "eef09b17-3d1a-4309-b021-b5c6df842ffb",
-                    "priority": "medium",
-                    "pitch": 4,
-                    "frequency": 200,
-                    "duration": 0.5,
-                    "wait": true,
-                    "effect": 12
+                    "condition": {
+                      "type": "variable",
+                      "value": "0"
+                    },
+                    "__collapseElse": false,
+                    "__collapse": false
                   },
-                  "id": "67c5e1e0-0330-44fb-8ece-8eca82653190"
-                }
-              ],
-              "false": [
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                        "args": {
+                          "type": "eef09b17-3d1a-4309-b021-b5c6df842ffb",
+                          "priority": "medium",
+                          "pitch": 4,
+                          "frequency": 200,
+                          "duration": 0.5,
+                          "wait": true,
+                          "effect": 12
+                        },
+                        "id": "67c5e1e0-0330-44fb-8ece-8eca82653190"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                        "args": {
+                          "type": "eef09b17-3d1a-4309-b021-b5c6df842ffb",
+                          "priority": "medium",
+                          "pitch": 4,
+                          "frequency": 200,
+                          "duration": 0.5,
+                          "wait": true,
+                          "effect": 5
+                        },
+                        "id": "a7b9b9b0-9717-4982-a1c1-15d416101927"
+                      }
+                    ]
+                  },
+                  "id": "8f623b93-4f9a-4dc1-ac7a-a7cc300ed4fa"
+                },
                 {
-                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "command": "EVENT_ACTOR_EMOTE",
                   "args": {
-                    "type": "eef09b17-3d1a-4309-b021-b5c6df842ffb",
-                    "priority": "medium",
-                    "pitch": 4,
-                    "frequency": 200,
-                    "duration": 0.5,
-                    "wait": true,
-                    "effect": 5
+                    "actorId": "$self$",
+                    "emoteId": "f1be2ac3-04ab-482a-8b83-99ffba1a89cd"
                   },
-                  "id": "a7b9b9b0-9717-4982-a1c1-15d416101927"
+                  "id": "3d44f3a6-3ec8-445b-9026-6c102d3e9ae1"
                 }
               ]
             },
-            "id": "8f623b93-4f9a-4dc1-ac7a-a7cc300ed4fa"
-          },
-          {
-            "command": "EVENT_ACTOR_EMOTE",
-            "args": {
-              "actorId": "$self$",
-              "emoteId": "f1be2ac3-04ab-482a-8b83-99ffba1a89cd"
-            },
-            "id": "3d44f3a6-3ec8-445b-9026-6c102d3e9ae1"
+            "id": "2620610b-ed3b-4d08-bfbd-beb68d0f71d5"
           }
         ]
       },
