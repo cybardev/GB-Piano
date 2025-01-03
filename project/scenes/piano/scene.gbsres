@@ -30,7 +30,7 @@
     {
       "command": "EVENT_TEXT_DRAW",
       "args": {
-        "text": "Notes:",
+        "text": "Pitch:",
         "x": 5,
         "y": 3,
         "location": "background",
