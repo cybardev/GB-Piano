@@ -17,14 +17,6 @@
   "y": 30,
   "script": [
     {
-      "command": "EVENT_ACTOR_DEACTIVATE",
-      "args": {
-        "actorId": "$self$",
-        "__collapse": true
-      },
-      "id": "f3e29aeb-8b63-4252-8150-28b4fe680891"
-    },
-    {
       "command": "EVENT_TEXT_DRAW",
       "args": {
         "text": "GB  Piano",
@@ -65,7 +57,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -85,102 +77,46 @@
             "id": "c6dbfd15-f8b3-4428-9345-dd79729c857b"
           },
           {
-            "command": "EVENT_IF",
+            "command": "EVENT_IF_ACTOR_DIRECTION",
             "args": {
-              "condition": {
-                "type": "variable",
-                "value": "0"
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "left"
               },
-              "__collapseElse": false,
-              "__collapse": false
+              "__collapseElse": false
             },
             "children": {
               "true": [
                 {
-                  "command": "EVENT_REPLACE_TILE_XY",
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
                   "args": {
-                    "x": {
-                      "type": "number",
-                      "value": 12
-                    },
-                    "y": {
-                      "type": "number",
-                      "value": 3
-                    },
-                    "tilesetId": "684355a3-58bb-41e6-a661-da4eacd79e29",
-                    "tileIndex": {
-                      "type": "number",
-                      "value": 1
+                    "actorId": "$self$",
+                    "direction": {
+                      "type": "direction",
+                      "value": "right"
                     },
                     "__collapse": true
                   },
-                  "id": "c3f9670b-9033-47db-b354-db11569e6750"
-                },
-                {
-                  "command": "EVENT_REPLACE_TILE_XY",
-                  "args": {
-                    "x": {
-                      "type": "number",
-                      "value": 13
-                    },
-                    "y": {
-                      "type": "number",
-                      "value": 3
-                    },
-                    "tilesetId": "684355a3-58bb-41e6-a661-da4eacd79e29",
-                    "tileIndex": {
-                      "type": "number",
-                      "value": 0
-                    },
-                    "__collapse": true
-                  },
-                  "id": "ab9801c1-5ba6-4a4f-9214-006783cb1dc4"
+                  "id": "03176604-450f-4953-93fd-42532b2e96f7"
                 }
               ],
               "false": [
                 {
-                  "command": "EVENT_REPLACE_TILE_XY",
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
                   "args": {
-                    "x": {
-                      "type": "number",
-                      "value": 12
-                    },
-                    "y": {
-                      "type": "number",
-                      "value": 3
-                    },
-                    "tilesetId": "684355a3-58bb-41e6-a661-da4eacd79e29",
-                    "tileIndex": {
-                      "type": "number",
-                      "value": 0
+                    "actorId": "$self$",
+                    "direction": {
+                      "type": "direction",
+                      "value": "left"
                     },
                     "__collapse": true
                   },
-                  "id": "cad9b7f4-178a-4ca9-b3eb-c1fcbb939917"
-                },
-                {
-                  "command": "EVENT_REPLACE_TILE_XY",
-                  "args": {
-                    "x": {
-                      "type": "number",
-                      "value": 13
-                    },
-                    "y": {
-                      "type": "number",
-                      "value": 3
-                    },
-                    "tilesetId": "684355a3-58bb-41e6-a661-da4eacd79e29",
-                    "tileIndex": {
-                      "type": "number",
-                      "value": 1
-                    },
-                    "__collapse": true
-                  },
-                  "id": "abbc1758-3bbc-4857-a029-46eac3c403b7"
+                  "id": "961be889-bd0e-47a0-99f5-412ec59f444b"
                 }
               ]
             },
-            "id": "b4246c63-ccdd-48c0-b10d-250d02b1b7ea"
+            "id": "453a0244-2cf0-4f73-9f31-249214f3a7ed"
           }
         ]
       },
@@ -191,5 +127,5 @@
   "playerHit2Script": [],
   "playerHit3Script": [],
   "autoFadeEventCollapse": true,
-  "playerSpriteSheetId": "daf95270-e30d-423b-9ee7-990ae29f57f6"
+  "playerSpriteSheetId": "00af1f70-fbb3-463a-915a-36b4c04a503b"
 }
