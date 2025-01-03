@@ -2,7 +2,7 @@
 
 Simple piano app for Gameboy
 
-![GB-Piano](https://github.com/user-attachments/assets/e667ed5b-a81e-4b94-87ea-263da2b816da)
+![GB-Piano](https://github.com/user-attachments/assets/8820b78a-94f8-45c8-83de-138db27d96bc)
 
 ## Controls
 
